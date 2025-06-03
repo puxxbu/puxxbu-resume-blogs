@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpuxxbu_about=self.webpackChunkpuxxbu_about||[]).push([[472],{5513:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Instalasi CasaOS, Web UI yang cocok untuk dashboard selfhost","permalink":"/blog/casaos-selfhost","unlisted":false,"date":"2025-05-03T00:00:00.000Z"}]}')}}]);

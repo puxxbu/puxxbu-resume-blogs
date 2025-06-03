@@ -1,0 +1,21 @@
+# robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap (sesuaikan URL dengan domain Anda)
+Sitemap: https://puxxbu.my.id/sitemap.xml 
+
+
+# Disallow direktori sensitif
+Disallow: /static/
+Disallow: /api/
+Disallow: /admin/
+Disallow: /dashboard/
+Disallow: /login/
+Disallow: /logout/
+Disallow: /signup/
+
+# Hindari duplikasi konten
+Disallow: /*?*
+Disallow: /*&*
+
