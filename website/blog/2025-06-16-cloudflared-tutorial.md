@@ -1,15 +1,16 @@
 ---
-slug: cloudflared-tunnel
-title: "Instalasi Cloudflare Tunnel di Perangkat Lokal (Tanpa IP Static)"
-description: "Panduan lengkap menginstal Cloudflare Tunnel untuk menghubungkan server lokal ke domain publik tanpa IP static. Solusi untuk CGNAT dan jaringan terbatas."
+slug: cloudflared-self-host-linux
+title: "Cara Self-Host Cloudflared Tunnel di Linux"
+description: "Panduan lengkap self-host Cloudflared Tunnel di Linux, mulai instalasi hingga konfigurasi pada perangkat lokal."
+keywords: [cloudflared, self-host, linux, tunnel, dns, homelab]
+tags: [self-hosting, cloudflare, linux, cloudflared, tunnel]
 author: Valerino Gozen
 author_url: https://github.com/puxxbu
 author_title: Back End Engineer at Berijalan
 author_image_url: https://media.licdn.com/dms/image/v2/D5603AQEL1EQStWzM_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701697323297?e=1752710400&v=beta&t=mK32frD6CEo2rbtWZ_IhLl-vdxMOxFSQO7omh77l5HA
-tags: [homelab, self-hosting, cloudflare, linux, dns, ip-static, cloudflared, tunnel, zero-trust]
 ---
 
-# Instalasi Cloudflare Tunnel di Perangkat Lokal
+# Cara Self-Host Cloudflared Tunnel di Linux
 
 ## Pendahuluan
 
@@ -17,9 +18,14 @@ tags: [homelab, self-hosting, cloudflare, linux, dns, ip-static, cloudflared, tu
 
 Cloudflare Tunnel adalah solusi untuk mengekspos layanan lokal ke internet tanpa:
 
-- IP publik statis
-- Membuka port firewall
-- Khawatir tentang CGNAT dari ISP
+- 🔒 Keamanan data terjamin  
+- ⚡ Akses tanpa IP statis  
+- 🌐 Integrasi mudah dengan Linux  
+- IP publik statis  
+- Membuka port firewall  
+- Khawatir tentang CGNAT dari ISP  
+
+Lihat juga artikel kami tentang [VPS Murah](/docs/vps-murah).  
 
 :::info
 **Catatan Platform:**  
@@ -30,7 +36,7 @@ Tutorial ini menggunakan Ubuntu 24.04 LTS, tetapi kompatibel dengan:
 - Raspberry Pi (ARM architecture)  
 :::
 
-## Prasyarat Wajib
+## Prasyarat untuk Self-Hosting Cloudflared di Linux
 
 1. ✅ Akun Cloudflare ([Daftar Gratis](https://dash.cloudflare.com/sign-up))
 2. ✅ Domain yang sudah terdaftar di Cloudflare
@@ -39,7 +45,7 @@ Tutorial ini menggunakan Ubuntu 24.04 LTS, tetapi kompatibel dengan:
 
 ## Langkah 1: Registrasi Domain di Cloudflare
 
-![Cloudflare Domain Setup](/img/blog/cloudflared/cloudflared-1-1.png)
+![Cloudflared self-host di Linux: Domain Setup](/img/blog/cloudflared/cloudflared-1-1.png)
 
 1. Login ke [Cloudflare Dashboard](https://dash.cloudflare.com)
 2. Klik "Add a Site"
@@ -60,7 +66,7 @@ Verifikasi status di [WhatsMyDNS](https://www.whatsmydns.net/).
 
 ## Langkah 2: Setup Zero Trust Tunnel
 
-![Cloudflare Zero Trust Setup](/img/blog/cloudflared/cloudflared-3-2.png)
+![Cloudflared self-host di Linux: Zero Trust Setup](/img/blog/cloudflared/cloudflared-3-2.png)
 
 1. Navigasi ke **Access** > **Zero Trust**
 2. Pilih **Networks** > **Tunnels**
@@ -111,7 +117,7 @@ journalctl -u cloudflared -f --output cat
 
 ## Langkah 5: Konfigurasi Public Hostname
 
-![Cloudflare Public Hostname Setup](/img/blog/cloudflared/cloudflared-5-3.png)
+![Cloudflared self-host di Linux: Public Hostname Setup](/img/blog/cloudflared/cloudflared-5-3.png)
 
 1. Buka tunnel yang sudah dibuat
 2. Klik **Add a public hostname**
