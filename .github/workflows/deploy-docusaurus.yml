@@ -46,9 +46,14 @@ jobs:
         run: npm run build
         working-directory: ./website
 
+      - name: Move CNAME to root
+        run: mv static/CNAME .
+        working-directory: ./website/build
+
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4 # Updated to latest version
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/build
-          force_orphan: true # Optional: Ensures clean history for GH Pages branch
+          force_orphan: true
+          cname: ${{ secrets.CUSTOM_DOMAIN }}
