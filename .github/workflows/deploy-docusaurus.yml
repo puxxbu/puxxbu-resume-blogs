@@ -46,9 +46,6 @@ jobs:
         run: npm run build
         working-directory: ./website
 
-      - name: Move CNAME to root
-        run: mv /website/static/CNAME .
-        working-directory: ./website/build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
