@@ -25,7 +25,6 @@ Cloudflare Tunnel adalah solusi untuk mengekspos layanan lokal ke internet tanpa
 - Membuka port firewall  
 - Khawatir tentang CGNAT dari ISP  
 
-Lihat juga artikel kami tentang [VPS Murah](/docs/vps-murah).  
 
 :::info
 **Catatan Platform:**  
@@ -126,7 +125,7 @@ journalctl -u cloudflared -f --output cat
    - **Domain**: Pilih domain yang sudah terdaftar
    - **Service**: Protocol dan port lokal (contoh: `http://localhost:8080`)
 
-### Contoh Konfigurasi Populer
+### Contoh Konfigurasi
 
 | Layanan      | URL Target             | Contoh Subdomain | Catatan               |
 |--------------|------------------------|------------------|-----------------------|
