@@ -28,7 +28,7 @@ function Home() {
   return (
     <Layout title="Home" description={siteConfig.tagline}>
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
-      <script defer src="https://umami.puxxbu.my.id/script.js" data-website-id="b3df8c6e-5e7b-4f52-bee1-05c740c749dd"></script>
+      <script defer src="https://umami.puxxbu.my.id/script.js" data-website-id="4ba4dcf4-0865-4be7-b019-8c5da2728a08"></script>
         <div
           className={styles.heroBannerWrapper}
           style={{
