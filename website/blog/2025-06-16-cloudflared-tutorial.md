@@ -7,33 +7,32 @@ tags: [self-hosting, cloudflare, linux, cloudflared, tunnel]
 author: Valerino Gozen
 author_url: https://github.com/puxxbu
 author_title: Back End Engineer at Berijalan
-author_image_url: https://media.licdn.com/dms/image/v2/D5603AQEL1EQStWzM_Q/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1701697323297?e=1752710400&v=beta&t=mK32frD6CEo2rbtWZ_IhLl-vdxMOxFSQO7omh77l5HA
+author_image_url: /img/profilepic.jpg
 ---
 
 # Cara Self-Host Cloudflared Tunnel di Linux
 
 ## Pendahuluan
 
-
-
 Cloudflare Tunnel adalah solusi untuk mengekspos layanan lokal ke internet tanpa:
 
-- 🔒 Keamanan data terjamin  
-- ⚡ Akses tanpa IP statis  
-- 🌐 Integrasi mudah dengan Linux  
-- IP publik statis  
-- Membuka port firewall  
-- Khawatir tentang CGNAT dari ISP  
-
+- 🔒 Keamanan data terjamin
+- ⚡ Akses tanpa IP statis
+- 🌐 Integrasi mudah dengan Linux
+- IP publik statis
+- Membuka port firewall
+- Khawatir tentang CGNAT dari ISP
 
 :::info
 **Catatan Platform:**  
-Tutorial ini menggunakan Ubuntu 24.04 LTS, tetapi kompatibel dengan:  
-- Windows (x64/ARM)  
-- macOS  
-- Docker  
-- Raspberry Pi (ARM architecture)  
-:::
+Tutorial ini menggunakan Ubuntu 24.04 LTS, tetapi kompatibel dengan:
+
+- Windows (x64/ARM)
+- macOS
+- Docker
+- Raspberry Pi (ARM architecture)
+
+  :::
 
 ## Prasyarat untuk Self-Hosting Cloudflared di Linux
 
@@ -89,11 +88,11 @@ cloudflared --version
 
 ### Untuk Sistem Lain
 
-| OS            | Install Command                                                                 |
-|---------------|---------------------------------------------------------------------------------|
-| Windows       | Unduh dari [release page](https://github.com/cloudflare/cloudflared/releases)   |
-| Docker        | `docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run <TOKEN>`   |
-| Raspberry Pi  | `wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm` |
+| OS           | Install Command                                                                                 |
+| ------------ | ----------------------------------------------------------------------------------------------- |
+| Windows      | Unduh dari [release page](https://github.com/cloudflare/cloudflared/releases)                   |
+| Docker       | `docker run cloudflare/cloudflared:latest tunnel --no-autoupdate run <TOKEN>`                   |
+| Raspberry Pi | `wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-arm` |
 
 ## Langkah 4: Koneksikan Tunnel
 
@@ -127,12 +126,12 @@ journalctl -u cloudflared -f --output cat
 
 ### Contoh Konfigurasi
 
-| Layanan      | URL Target             | Contoh Subdomain | Catatan               |
-|--------------|------------------------|------------------|-----------------------|
-| Web Server   | `http://localhost:80`  | `www`            | Untuk akses website   |
-| SSH          | `ssh://localhost:22`   | `ssh`            | Akses remote server   |
-| VNC          | `http://localhost:5901`| `vnc`            | Remote desktop        |
-| Database     | `tcp://localhost:5432` | `db`             | Akses PostgreSQL      |
+| Layanan    | URL Target              | Contoh Subdomain | Catatan             |
+| ---------- | ----------------------- | ---------------- | ------------------- |
+| Web Server | `http://localhost:80`   | `www`            | Untuk akses website |
+| SSH        | `ssh://localhost:22`    | `ssh`            | Akses remote server |
+| VNC        | `http://localhost:5901` | `vnc`            | Remote desktop      |
+| Database   | `tcp://localhost:5432`  | `db`             | Akses PostgreSQL    |
 
 ## Troubleshooting Lengkap
 
@@ -195,7 +194,7 @@ Keuntungan Menggunakan Cloudflare Tunnel:
 
 ☁️ Akses server dari mana saja  
 🔒 Keamanan enterprise secara gratis  
-⚡ Tidak perlu konfigurasi jaringan rumit  
+⚡ Tidak perlu konfigurasi jaringan rumit
 
 ### Referensi Tambahan
 
