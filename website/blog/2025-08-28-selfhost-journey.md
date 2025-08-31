@@ -12,15 +12,15 @@ tags: [self hosting, homelab, linux]
 
 Di awal tahun 2025, saya banyak terinspirasi dari diskusi di komunitas reddit seperti r/selfhosted. Melihat bagaimana para member disana membangun server pribadi untuk berbagai layanan mulai dari _cloud storage_ hingga email server memicu rasa penasaran saya. Bukan hanya efisiensi biaya, tetapi juga kontrol penuh atas data dan privasi, serta kesempatan belajar yang bagi saya cukup worth it.
 
-Salah satu miskonsepsi umum yang sering menghalangi pemula adalah anggapan bahwa _homelab_ wajib memiliki alamat IP Statis agar bisa diakses dari luar. Dulu saya pun berpikir demikian. Namun, perkembangan teknologi telah menyediakan solusi elegan untuk tantangan ini.
+Salah satu miskonsepsi umum yang sering menghalangi pemula adalah anggapan bahwa _homelab_ wajib memiliki alamat IP Statis agar bisa diakses dari luar. Dulu saya pun berpikir demikian. Namun, perkembangan teknologi telah menyediakan solusi untuk tantangan ini.
 
-Dalam tulisan ini, saya akan berbagi pengalaman dalam proses penyiapan _homelab_ pribadi, mulai dari merakit kembali perangkat keras yang ada, konfigurasi sistem operasi Linux, hingga mengelola aplikasi dengan Docker di lingkungan jaringan tanpa IP statis.
+Dalam tulisan ini, saya akan berbagi pengalaman dalam proses penyiapan _homelab_ pribadi, mulai dari merakit kembali part pc saya yang ada, konfigurasi OS Linux, hingga mengelola aplikasi dengan Docker.
 
 #### **Mengapa Membangun Homelab?**
 
-- **Efisiensi Biaya:** Alternatif gratis untuk layanan berbayar seperti _cloud storage_ atau _email_.
+- **Efisiensi Biaya:** Alternatif gratis untuk layanan berbayar seperti _cloud storage_ atau _web hosting_.
 - **Kontrol & Privasi:** Kendali penuh atas data pribadi tanpa campur tangan pihak ketiga.
-- **Sarana Belajar:** Kesempatan luar biasa untuk mendalami dunia server, jaringan, dan keamanan siber.
+- **Sarana Belajar:** Kesempatan luar biasa untuk mendalami dunia server, jaringan, dan cyber security.
 
 ---
 
@@ -30,14 +30,13 @@ Berikut adalah diagram arsitektur singkat homelab saya:
 
 ![Arsitektur Selfhost](/img/blog/selfhost-journey/homelab-puxxbu.png)
 
-Setup yang saya gunakan sangat sederhana dan hemat biaya, karena juga saya masih belajar membuat menciptakan setup yang ideal.
 
 - **Server Utama:** PC desktop lama (Intel i3, 16GB RAM).
-- **Server Pendukung:** STB (_Set-Top Box_) hasil _root_ seharga Rp 150.000.
+- **Server Pendukung:** STB (_Set-Top Box_) dengan keadaan _root_ seharga Rp 150.000.
 
-Note : Menurut saya STB ini merupakan salah satu barang yang cukup worth it untuk memulai belajar self hosting tanpa merogoh kocek yang cukup mahal + hemat listrik ketika dinyalan terus menerus
+Note : Menurut saya STB ini merupakan salah satu barang yang cukup worth it untuk memulai belajar self hosting tanpa merogoh kocek yang cukup mahal + hemat listrik ketika dinyalakan terus menerus
 
-Karena penyedia internet (ISP) di rumah saya tidak menyediakan IP publik statis, saya mengandalkan dua teknologi utama agar layanan yang berjalan di server tetap dapat diakses secara fleksibel dan aman.
+Karena penyedia internet (ISP) di rumah saya tidak menyediakan IP publik statis, saya mengandalkan dua tools utama agar layanan yang berjalan di server tetap dapat diakses secara fleksibel dan aman.
 
 **1. Cloudflare Tunnel (Zero Trust) 🚀**
 Layanan ini membuat aplikasi di server lokal bisa diakses secara publik melalui domain.
@@ -75,7 +74,7 @@ Berikut beberapa aplikasi yang saya jalankan di homelab:
 
 Kalau butuh aplikasi monitoring yang ringan tapi cukup lengkap, **Beszel** jadi pilihan tepat. Ia bisa menampilkan penggunaan resource server (CPU, RAM, storage, hingga network), bahkan memberi **notifikasi alert** kalau ada resource yang sudah mencapai ambang batas.
 
-Untuk kebutuhan saya, Beszel **lebih dari cukup** dibanding harus men-setup **Grafana + Prometheus** yang jauh lebih berat.
+Untuk kebutuhan saya, Beszel **lebih dari cukup** dibanding harus men-setup **Grafana + Prometheus** yang jauh lebih berat dari segi penggunaan resource.
 
 - **Monitoring** : CPU, RAM, storage, dan network
 - **Mendukung Docker**: bisa monitoring container secara langsung
