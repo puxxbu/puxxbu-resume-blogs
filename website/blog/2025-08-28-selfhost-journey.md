@@ -10,7 +10,7 @@ tags: [self hosting, homelab, linux]
 
 ### **Bikin Homelab Sendiri ? Gampang!** 💻
 
-Di awal tahun 2025, saya banyak terinspirasi dari diskusi di komunitas reddit seperti r/selfhosted. Melihat bagaimana para member disana membangun server pribadi untuk berbagai layanan—mulai dari _cloud storage_ hingga _email server_—memicu rasa penasaran saya. Bukan hanya efisiensi biaya, tetapi juga kontrol penuh atas data dan privasi, serta kesempatan belajar yang bagi saya cukup worth it.
+Di awal tahun 2025, saya banyak terinspirasi dari diskusi di komunitas reddit seperti r/selfhosted. Melihat bagaimana para member disana membangun server pribadi untuk berbagai layanan mulai dari _cloud storage_ hingga email server memicu rasa penasaran saya. Bukan hanya efisiensi biaya, tetapi juga kontrol penuh atas data dan privasi, serta kesempatan belajar yang bagi saya cukup worth it.
 
 Salah satu miskonsepsi umum yang sering menghalangi pemula adalah anggapan bahwa _homelab_ wajib memiliki alamat IP Statis agar bisa diakses dari luar. Dulu saya pun berpikir demikian. Namun, perkembangan teknologi telah menyediakan solusi elegan untuk tantangan ini.
 
@@ -109,7 +109,7 @@ Kalau Anda sering pindah-pindah file antar device, Syncthing wajib dicoba. Aplik
 
 ---
 
-### 4. [Portainer](https://www.portainer.io) – Dashboard Docker Favorit
+### 4. [Portainer](https://www.portainer.io) – Dashboard Docker
 
 Bagi saya, **Portainer** adalah “dashboard wajib” di homelab. Lewat antarmuka berbasis web, saya bisa dengan mudah membuat template **docker-compose**, mengelola container, hingga backup.
 
@@ -122,7 +122,7 @@ Bagi saya, **Portainer** adalah “dashboard wajib” di homelab. Lewat antarmuk
 
 ---
 
-### 5. [File Browser](https://filebrowser.org) – Explorer ala Google Drive
+### 5. [File Browser](https://filebrowser.org) – File Explorer
 
 Sesuai namanya, **File Browser** adalah file explorer berbasis web. Konsepnya mirip Google Drive atau OneDrive, tapi berjalan di server pribadi.
 
@@ -134,7 +134,7 @@ Sesuai namanya, **File Browser** adalah file explorer berbasis web. Konsepnya mi
 
 ---
 
-### 6. [n8n](https://n8n.io) – Workflow Automation yang Lagi Naik Daun
+### 6. [n8n](https://n8n.io) – Workflow Automation 
 
 Tahun 2025 ini, **n8n** lagi booming. Aplikasi ini memungkinkan kita membuat workflow automation tanpa coding yang terlalu rumit. Bagi saya yang punya background programming, n8n sangat menyenangkan untuk dieksplorasi.
 
@@ -169,7 +169,7 @@ Kalau sering berkutat dengan PDF, **Stirling PDF** adalah penyelamat. Fiturnya m
 
 ---
 
-### 9. [Umami](https://umami.is) – Analytics Mandiri
+### 9. [Umami](https://umami.is) – Analytics
 
 Buat Anda yang ingin alternatif Google Analytics, **Umami** layak dicoba. Setup-nya mudah, fiturnya cukup lengkap, dan bisa diakses publik untuk men-track trafik website.
 
