@@ -6,6 +6,8 @@ author_url: https://github.com/puxxbu
 author_title: Back End Engineer at Berijalan
 author_image_url: /img/profilepic.jpg
 tags: [self hosting, homelab, linux]
+image: /img/blog/selfhost-journey/homelab-puxxbu.png
+description: "Catatan perjalanan saya membangun homelab: dari perakitan, jaringan, sampai otomasi layanan."
 ---
 
 ### **Bikin Homelab Sendiri ? Gampang!** 💻
