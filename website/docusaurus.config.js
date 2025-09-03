@@ -2,7 +2,7 @@ import autoprefixer from "autoprefixer";
 import katex from "rehype-katex";
 import math from "remark-math";
 import tailwind from "tailwindcss";
-require('dotenv').config();
+require("dotenv").config();
 
 const internetProfiles = {
   linkedin: {
@@ -145,14 +145,14 @@ module.exports = {
       "@dipakparmar/docusaurus-plugin-umami",
       /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
       ({
-        websiteID: process.env.UMAMI_WEB_ID, // Required
-        analyticsDomain: process.env.UMAMI_WEB_DOMAIN, // Required
+        websiteID: "4ba4dcf4-0865-4be7-b019-8c5da2728a08", // Required
+        analyticsDomain: "umami.puxxbu.my.id", // Required
         scriptName: "script.js", // Optional, defaults to script.js
-        dataHostURL: process.env.UMAMI_WEB_DOMAIN, // Optional
+        dataHostURL: "umami.puxxbu.my.id", // Optional
         dataAutoTrack: true, // Optional, defaults to true
         dataDoNotTrack: false, // Optional, defaults to false
         dataCache: false, // Optional, defaults to false
-        dataDomains: process.env.UMAMI_WEB_DOMAIN, // Optional, comma separated list of domains, *Recommended*
+        dataDomains: "umami.puxxbu.my.id", // Optional, comma separated list of domains, *Recommended*
         dataExcludeSearch: false, // Optional, defaults to false
         dataExcludeHash: false, // Optional, defaults to false
         dataTag: "pablo", // Optional
