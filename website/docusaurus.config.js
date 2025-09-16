@@ -160,3 +160,19 @@ module.exports = {
     ],
   ],
 };
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
+  // ...
+
+  scripts: [
+    {
+      src: "https://tianji.slapmomon.my.id/tracker.js",
+      async: true,
+      defer: true,
+      "data-website-id": "cmfm6obyg0001a3uyoij9k81z",
+    },
+  ],
+};
+
+module.exports = config;
