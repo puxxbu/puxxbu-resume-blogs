@@ -142,21 +142,21 @@ module.exports = {
       };
     },
     [
-      "@dipakparmar/docusaurus-plugin-umami",
-      /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
-      ({
-        websiteID: process.env.UMAMI_WEB_ID,
-        analyticsDomain: process.env.UMAMI_WEB_DOMAIN,
-        scriptName: "script.js",
-        dataHostURL: process.env.UMAMI_WEB_DOMAIN,
-        dataAutoTrack: true, // Optional, defaults to true
-        dataDoNotTrack: false, // Optional, defaults to false
-        dataCache: false, // Optional, defaults to false
-        dataDomains: process.env.UMAMI_WEB_DOMAIN, // Optional, comma separated list of domains, *Recommended*
-        dataExcludeSearch: false, // Optional, defaults to false
-        dataExcludeHash: false, // Optional, defaults to false
-        dataTag: "puxxbu", // Optional
-      }),
+      // "@dipakparmar/docusaurus-plugin-umami",
+      // /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
+      // ({
+      //   websiteID: process.env.UMAMI_WEB_ID,
+      //   analyticsDomain: process.env.UMAMI_WEB_DOMAIN,
+      //   scriptName: "script.js",
+      //   dataHostURL: process.env.UMAMI_WEB_DOMAIN,
+      //   dataAutoTrack: true, // Optional, defaults to true
+      //   dataDoNotTrack: false, // Optional, defaults to false
+      //   dataCache: false, // Optional, defaults to false
+      //   dataDomains: process.env.UMAMI_WEB_DOMAIN, // Optional, comma separated list of domains, *Recommended*
+      //   dataExcludeSearch: false, // Optional, defaults to false
+      //   dataExcludeHash: false, // Optional, defaults to false
+      //   dataTag: "puxxbu", // Optional
+      // }),
     ],
   ],
   scripts: [
@@ -165,6 +165,20 @@ module.exports = {
       async: true,
       defer: true,
       "data-website-id": "cmfm6obyg0001a3uyoij9k81z",
+    },
+    {
+      src: `https://${process.env.UMAMI_WEB_DOMAIN}/script.js`,
+      async: true,
+      defer: true,
+      "data-website-id": process.env.UMAMI_WEB_ID,
+      "data-host-url": process.env.UMAMI_WEB_DOMAIN,
+      "data-auto-track": "true",
+      "data-do-not-track": "false",
+      "data-cache": "false",
+      "data-domains": process.env.UMAMI_WEB_DOMAIN,
+      "data-exclude-search": "false",
+      "data-exclude-hash": "false",
+      "data-tag": "puxxbu",
     },
   ],
 };
