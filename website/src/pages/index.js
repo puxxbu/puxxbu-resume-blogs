@@ -28,7 +28,11 @@ function Home() {
   return (
     <Layout title="Home" description={siteConfig.tagline}>
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
-      <script defer src="https://umami.puxxbu.my.id/script.js" data-website-id="4ba4dcf4-0865-4be7-b019-8c5da2728a08"></script>
+        <script
+          defer
+          src="https://umami.slapmomon.my.id/script.js"
+          data-website-id="4ba4dcf4-0865-4be7-b019-8c5da2728a08"
+        ></script>
         <div
           className={styles.heroBannerWrapper}
           style={{
@@ -70,7 +74,8 @@ function Home() {
           <div className={styles.aboutText}>
             <h2>Hi</h2>
             <p>
-              I am Vano, a Backend Developer and Self hosting enthusiast in Jogja.
+              I am Vano, a Backend Developer and Self hosting enthusiast in
+              Jogja.
             </p>
             <p>
               I love building cool and meaningful things with tech like{" "}
@@ -81,15 +86,11 @@ function Home() {
             </p>
 
             <p>
-            👨‍💻 Currently working in {" "}
+              👨‍💻 Currently working in{" "}
               <a href="https://www.comp.nus.edu.sg/programmes/ug/cs/">
                 Berijalan
               </a>{" "}
-              as a{" "}
-              <a >
-                Backend Spring Boot Developer
-              </a>{" "}
-              since 2024
+              as a <a>Backend Spring Boot Developer</a> since 2024
             </p>
 
             <p>
