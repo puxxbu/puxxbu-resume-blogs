@@ -145,14 +145,14 @@ module.exports = {
       "@dipakparmar/docusaurus-plugin-umami",
       /** @type {import('@dipakparmar/docusaurus-plugin-umami').Options} */
       ({
-        websiteID: process.env.UMAMI_WEB_ID,
-        analyticsDomain: process.env.UMAMI_WEB_DOMAIN,
+        websiteID: "4ba4dcf4-0865-4be7-b019-8c5da2728a08",
+        analyticsDomain: "umami.slapmomon.my.id",
         scriptName: "script.js",
-        dataHostURL: process.env.UMAMI_WEB_DOMAIN,
+        dataHostURL: "umami.slapmomon.my.id",
         dataAutoTrack: true, // Optional, defaults to true
         dataDoNotTrack: false, // Optional, defaults to false
         dataCache: false, // Optional, defaults to false
-        dataDomains: process.env.UMAMI_WEB_DOMAIN, // Optional, comma separated list of domains, *Recommended*
+        dataDomains: "umami.slapmomon.my.id", // Optional, comma separated list of domains, *Recommended*
         dataExcludeSearch: false, // Optional, defaults to false
         dataExcludeHash: false, // Optional, defaults to false
         dataTag: "pablo", // Optional
