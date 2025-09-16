@@ -28,11 +28,6 @@ function Home() {
   return (
     <Layout title="Home" description={siteConfig.tagline}>
       <header className={styles.heroBanner} style={{ minHeight: headerHeight }}>
-        <script
-          defer
-          src="https://umami.slapmomon.my.id/script.js"
-          data-website-id="4ba4dcf4-0865-4be7-b019-8c5da2728a08"
-        ></script>
         <div
           className={styles.heroBannerWrapper}
           style={{
