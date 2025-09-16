@@ -155,7 +155,7 @@ module.exports = {
         dataDomains: process.env.UMAMI_WEB_DOMAIN, // Optional, comma separated list of domains, *Recommended*
         dataExcludeSearch: false, // Optional, defaults to false
         dataExcludeHash: false, // Optional, defaults to false
-        dataTag: "pablo", // Optional
+        dataTag: "puxxbu", // Optional
       }),
     ],
   ],
