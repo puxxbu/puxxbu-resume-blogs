@@ -159,12 +159,6 @@ module.exports = {
       }),
     ],
   ],
-};
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  // ...
-
   scripts: [
     {
       src: "https://tianji.slapmomon.my.id/tracker.js",
@@ -174,5 +168,3 @@ const config = {
     },
   ],
 };
-
-module.exports = config;
