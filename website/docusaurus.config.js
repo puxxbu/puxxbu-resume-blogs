@@ -147,7 +147,7 @@ module.exports = {
       ({
         websiteID: process.env.UMAMI_WEB_ID,
         analyticsDomain: process.env.UMAMI_WEB_DOMAIN,
-        scriptName: "stat.js",
+        scriptName: "stats.js",
         dataHostURL: process.env.UMAMI_WEB_DOMAIN,
         dataAutoTrack: true, // Optional, defaults to true
         dataDoNotTrack: false, // Optional, defaults to false
