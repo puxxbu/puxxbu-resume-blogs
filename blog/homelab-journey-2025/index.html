@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="blog-wrapper blog-post-page plugin-blog plugin-id-default" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Pengalaman Berkecimpung Membuat Homelab 🏠 | Valerino Gozen</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://puxxbu.my.id/blog/homelab-journey-2025"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docusaurus_tag" content="default"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docsearch:docusaurus_tag" content="default"><meta data-rh="true" property="og:title" content="Pengalaman Berkecimpung Membuat Homelab 🏠 | Valerino Gozen"><meta data-rh="true" name="description" content="Catatan perjalanan saya membangun homelab: dari perakitan, jaringan, sampai otomasi layanan."><meta data-rh="true" property="og:description" content="Catatan perjalanan saya membangun homelab: dari perakitan, jaringan, sampai otomasi layanan."><meta data-rh="true" property="og:image" content="https://puxxbu.my.id/img/blog/selfhost-journey/homelab-puxxbu.png"><meta data-rh="true" name="twitter:image" content="https://puxxbu.my.id/img/blog/selfhost-journey/homelab-puxxbu.png"><meta data-rh="true" property="og:type" content="article"><meta data-rh="true" property="article:published_time" content="2025-08-28T00:00:00.000Z"><meta data-rh="true" property="article:author" content="https://github.com/puxxbu"><meta data-rh="true" property="article:tag" content="self hosting,homelab,linux"><link data-rh="true" rel="icon" href="/img/logo.png"><link data-rh="true" rel="canonical" href="https://puxxbu.my.id/blog/homelab-journey-2025"><link data-rh="true" rel="alternate" href="https://puxxbu.my.id/blog/homelab-journey-2025" hreflang="en"><link data-rh="true" rel="alternate" href="https://puxxbu.my.id/blog/homelab-journey-2025" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://puxxbu.my.id/blog/homelab-journey-2025","mainEntityOfPage":"https://puxxbu.my.id/blog/homelab-journey-2025","url":"https://puxxbu.my.id/blog/homelab-journey-2025","headline":"Pengalaman Berkecimpung Membuat Homelab 🏠 ","name":"Pengalaman Berkecimpung Membuat Homelab 🏠 ","description":"Catatan perjalanan saya membangun homelab: dari perakitan, jaringan, sampai otomasi layanan.","datePublished":"2025-08-28T00:00:00.000Z","author":{"@type":"Person","name":"Valerino Gozen","description":"Back End Engineer at Berijalan","url":"https://github.com/puxxbu","image":"/img/profilepic.jpg"},"image":{"@type":"ImageObject","@id":"https://puxxbu.my.id/img/blog/selfhost-journey/homelab-puxxbu.png","url":"https://puxxbu.my.id/img/blog/selfhost-journey/homelab-puxxbu.png","contentUrl":"https://puxxbu.my.id/img/blog/selfhost-journey/homelab-puxxbu.png","caption":"title image for the blog post: Pengalaman Berkecimpung Membuat Homelab 🏠 "},"keywords":[],"isPartOf":{"@type":"Blog","@id":"https://puxxbu.my.id/blog","name":"Blog"}}</script><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="Valerino Gozen RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="Valerino Gozen Atom Feed">
+
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<script src="https://tianji.slapmomon.my.id/tracker.js" async defer="defer" data-website-id="cmfm6obyg0001a3uyoij9k81z"></script>
+<script src="https://insight.slapmomon.my.id/script.js" async defer="defer" data-website-id="b9538ced-03bc-4a9a-9f0e-67ad8e7d979c"></script><link rel="stylesheet" href="/assets/css/styles.692a4574.css">
+<script src="/assets/js/runtime~main.04b6a052.js" defer="defer"></script>
+<script src="/assets/js/main.c29329de.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="dark";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top navbarHideable_m1mJ"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" target="_self" href="/"><div class="navbar__logo"><img src="/img/logo.png" alt="Valerino Gozen" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/logo.png" alt="Valerino Gozen" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Valerino Gozen</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/blog/">Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a class="navbar__item navbar__link" href="/projects/">Projects</a><a href="https://puxxbu.my.id/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">Resume<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="container margin-vert--lg"><div class="row"><aside class="col col--3"><nav class="sidebar_re4s thin-scrollbar" aria-label="Blog recent posts navigation"><div class="sidebarItemTitle_pO2u margin-bottom--md">Recent posts</div><div role="group"><h3 class="yearGroupHeading_rMGB">2025</h3><ul class="sidebarItemList_Yudw clean-list"><li class="sidebarItem__DBe"><a aria-current="page" class="sidebarItemLink_mo7H sidebarItemLinkActive_I1ZP" href="/blog/homelab-journey-2025">Pengalaman Berkecimpung Membuat Homelab 🏠 </a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/cloudflared-self-host-linux">Cara Self-Host Cloudflared Tunnel di Linux</a></li><li class="sidebarItem__DBe"><a class="sidebarItemLink_mo7H" href="/blog/casaos-selfhost">Instalasi CasaOS, Web UI yang cocok untuk dashboard selfhost</a></li></ul></div></nav></aside><main class="col col--7"><article class=""><header><h1 class="title_f1Hy">Pengalaman Berkecimpung Membuat Homelab 🏠 </h1><div class="container_mt6G margin-vert--md"><time datetime="2025-08-28T00:00:00.000Z">August 28, 2025</time> · <!-- -->6 min read</div><div class="margin-top--md margin-bottom--sm row"><div class="col col--12 authorCol_Hf19"><div class="avatar margin-bottom--sm"><a href="https://github.com/puxxbu" target="_blank" rel="noopener noreferrer" class="avatar__photo-link"><img class="avatar__photo authorImage_XqGP" src="/img/profilepic.jpg" alt="Valerino Gozen"></a><div class="avatar__intro authorDetails_lV9A"><div class="avatar__name"><a href="https://github.com/puxxbu" target="_blank" rel="noopener noreferrer"><span class="authorName_yefp">Valerino Gozen</span></a></div><small class="authorTitle_nd0D" title="Back End Engineer at Berijalan">Back End Engineer at Berijalan</small><div class="authorSocials_rSDt"></div></div></div></div></div></header><div id="__blog-post-container" class="markdown"><h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="bikin-homelab-sendiri--gampang-"><strong>Bikin Homelab Sendiri ? Gampang!</strong> 💻<a href="#bikin-homelab-sendiri--gampang-" class="hash-link" aria-label="Direct link to bikin-homelab-sendiri--gampang-" title="Direct link to bikin-homelab-sendiri--gampang-">​</a></h3>
+<p>Di awal tahun 2025, saya banyak terinspirasi dari diskusi di komunitas reddit seperti r/selfhosted. Melihat bagaimana para member disana membangun server pribadi untuk berbagai layanan mulai dari <em>cloud storage</em> hingga email server memicu rasa penasaran saya. Bukan hanya efisiensi biaya, tetapi juga kontrol penuh atas data dan privasi, serta kesempatan belajar yang bagi saya cukup worth it.</p>
+<p>Salah satu miskonsepsi umum yang sering menghalangi pemula adalah anggapan bahwa <em>homelab</em> wajib memiliki alamat IP Statis agar bisa diakses dari luar. Dulu saya pun berpikir demikian. Namun, perkembangan teknologi telah menyediakan solusi untuk tantangan ini.</p>
+<p>Dalam tulisan ini, saya akan berbagi pengalaman dalam proses penyiapan <em>homelab</em> pribadi, mulai dari merakit kembali part pc saya yang ada, konfigurasi OS Linux, hingga mengelola aplikasi dengan Docker.</p>
+<h4 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="mengapa-membangun-homelab"><strong>Mengapa Membangun Homelab?</strong><a href="#mengapa-membangun-homelab" class="hash-link" aria-label="Direct link to mengapa-membangun-homelab" title="Direct link to mengapa-membangun-homelab">​</a></h4>
+<ul>
+<li><strong>Efisiensi Biaya:</strong> Alternatif gratis untuk layanan berbayar seperti <em>cloud storage</em> atau <em>web hosting</em>.</li>
+<li><strong>Kontrol &amp; Privasi:</strong> Kendali penuh atas data pribadi tanpa campur tangan pihak ketiga.</li>
+<li><strong>Sarana Belajar:</strong> Kesempatan luar biasa untuk mendalami dunia server, jaringan, dan cyber security.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="arsitektur-dan-perangkat-keras"><strong>Arsitektur dan Perangkat Keras</strong><a href="#arsitektur-dan-perangkat-keras" class="hash-link" aria-label="Direct link to arsitektur-dan-perangkat-keras" title="Direct link to arsitektur-dan-perangkat-keras">​</a></h3>
+<p>Berikut adalah diagram arsitektur singkat homelab saya:</p>
+<p><img decoding="async" loading="lazy" alt="Arsitektur Selfhost" src="/assets/images/homelab-puxxbu-b4b65057b33591657faf888915e99b26.png" width="1654" height="1169" class="img_ev3q"></p>
+<ul>
+<li><strong>Server Utama:</strong> PC desktop lama (Intel i3, 16GB RAM).</li>
+<li><strong>Server Pendukung:</strong> STB (<em>Set-Top Box</em>) dengan keadaan <em>root</em> seharga Rp 150.000.</li>
+</ul>
+<p>Note : Menurut saya STB ini merupakan salah satu barang yang cukup worth it untuk memulai belajar self hosting tanpa merogoh kocek yang cukup mahal + hemat listrik ketika dinyalakan terus menerus</p>
+<p>Karena penyedia internet (ISP) di rumah saya tidak menyediakan IP publik statis, saya mengandalkan dua tools utama agar layanan yang berjalan di server tetap dapat diakses secara fleksibel dan aman.</p>
+<p><strong>1. Cloudflare Tunnel (Zero Trust) 🚀</strong>
+Layanan ini membuat aplikasi di server lokal bisa diakses secara publik melalui domain.</p>
+<ul>
+<li><strong>Fungsi:</strong> Menjadi &quot;terowongan&quot; aman antara server di rumah dengan jaringan global Cloudflare.</li>
+<li><strong>Keuntungan Utama:</strong>
+<ul>
+<li><strong>Akses Publik:</strong> Layanan bisa diakses dari mana saja lewat nama domain.</li>
+<li><strong>Keamanan:</strong> Tidak perlu membuka <em>port</em> di <em>firewall</em> rumah, sehingga lebih aman dari serangan.</li>
+</ul>
+</li>
+<li><strong>Biaya:</strong> Tersedia paket gratis yang sangat memadai untuk kebutuhan personal.</li>
+</ul>
+<p>untuk lebih lengkapnya bisa kunjungi blog saya mengenai setup <a href="https://puxxbu.my.id/blog/cloudflared-self-host-linux/" target="_blank" rel="noopener noreferrer">Cloudflare Tunnel</a></p>
+<p><strong>2. Tailscale 🛡️</strong>
+Layanan ini menciptakan jaringan pribadi (VPN) yang aman untuk semua perangkat saya.</p>
+<ul>
+<li><strong>Fungsi:</strong> Menghubungkan server, laptop, dan <em>smartphone</em> dalam satu jaringan virtual yang terenkripsi.</li>
+<li><strong>Keuntungan Utama:</strong>
+<ul>
+<li><strong>Akses Terbatas:</strong> Hanya perangkat dan pengguna yang diizinkan yang bisa masuk ke jaringan.</li>
+<li><strong>Keamanan Maksimal:</strong> IP asli server tidak tyaerekspos ke internet sama sekali. Sangat ideal untuk manajemen server jarak jauh.</li>
+</ul>
+</li>
+<li><strong>Biaya:</strong> Gratis untuk penggunaan pribadi.</li>
+</ul>
+<h2 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="aplikasi-yang-saya-self-host-di-homelab">Aplikasi yang Saya Self-Host di Homelab<a href="#aplikasi-yang-saya-self-host-di-homelab" class="hash-link" aria-label="Direct link to Aplikasi yang Saya Self-Host di Homelab" title="Direct link to Aplikasi yang Saya Self-Host di Homelab">​</a></h2>
+<p>Mayoritas aplikasi yang saya self-host dijalankan menggunakan <strong>Docker Compose</strong>, dengan <strong>Portainer</strong> sebagai alat utama untuk memanage sekaligus menjadi dashboard container. Sebagian besar layanan ini saya gunakan untuk kebutuhan pribadi, sehingga peran <strong>Tailscale</strong> sangat penting di homelab saya.</p>
+<p>Dengan Tailscale, semua aplikasi berjalan di jaringan privat dan <strong>tidak bisa diakses secara publik</strong>. Hanya perangkat atau orang yang sudah didaftarkan di Tailscale yang bisa mengakses layanan tersebut. Cara ini membuat homelab tetap aman, tapi tetap praktis digunakan kapan saja.</p>
+<p>Berikut beberapa aplikasi yang saya jalankan di homelab:</p>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="1-beszel--monitoring-sederhana-ringkas-dan-efektif">1. <a href="https://beszel.dev" target="_blank" rel="noopener noreferrer">Beszel</a> – Monitoring Sederhana, Ringkas, dan Efektif<a href="#1-beszel--monitoring-sederhana-ringkas-dan-efektif" class="hash-link" aria-label="Direct link to 1-beszel--monitoring-sederhana-ringkas-dan-efektif" title="Direct link to 1-beszel--monitoring-sederhana-ringkas-dan-efektif">​</a></h3>
+<p><img decoding="async" loading="lazy" alt="Beszel Sample" src="/assets/images/beszel-sample-0884e73f6a20a3ea63df1166b52c7619.png" width="1353" height="1087" class="img_ev3q"></p>
+<p>Kalau butuh aplikasi monitoring yang ringan tapi cukup lengkap, <strong>Beszel</strong> jadi pilihan tepat. Ia bisa menampilkan penggunaan resource server (CPU, RAM, storage, hingga network), bahkan memberi <strong>notifikasi alert</strong> kalau ada resource yang sudah mencapai ambang batas.</p>
+<p>Untuk kebutuhan saya, Beszel <strong>lebih dari cukup</strong> dibanding harus men-setup <strong>Grafana + Prometheus</strong> yang jauh lebih berat dari segi penggunaan resource.</p>
+<ul>
+<li><strong>Monitoring</strong> : CPU, RAM, storage, dan network</li>
+<li><strong>Mendukung Docker</strong>: bisa monitoring container secara langsung</li>
+<li><strong>Multi-instance</strong>: bisa dipasang di banyak server dengan agent</li>
+<li><strong>Setup cepat</strong> dan mudah</li>
+<li><strong>Alert bawaan</strong> kalau resource melebihi batas</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="2-rustdesk--remote-desktop-gratis">2. <a href="https://rustdesk.com" target="_blank" rel="noopener noreferrer">Rustdesk</a> – Remote Desktop Gratis<a href="#2-rustdesk--remote-desktop-gratis" class="hash-link" aria-label="Direct link to 2-rustdesk--remote-desktop-gratis" title="Direct link to 2-rustdesk--remote-desktop-gratis">​</a></h3>
+<p>Kadang saya butuh akses ke server lewat tampilan GUI, bukan sekadar terminal. Untuk itu saya pakai <strong>Rustdesk</strong>. Aplikasi ini gratis, setup-nya mudah, dan bisa diselfhost kalau mau. Rasanya seperti punya <strong>RDP (Remote Desktop Protocol)</strong> sendiri, tapi tanpa ribet.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Remote desktop gratis</strong></li>
+<li><strong>Setup mudah</strong>, tidak ribet</li>
+<li>Bisa <strong>selfhost server relay</strong> jika dibutuhkan</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="3-syncthing--sinkronisasi-file-peer-to-peer">3. <a href="https://syncthing.net" target="_blank" rel="noopener noreferrer">Syncthing</a> – Sinkronisasi File Peer-to-Peer<a href="#3-syncthing--sinkronisasi-file-peer-to-peer" class="hash-link" aria-label="Direct link to 3-syncthing--sinkronisasi-file-peer-to-peer" title="Direct link to 3-syncthing--sinkronisasi-file-peer-to-peer">​</a></h3>
+<p>Kalau Anda sering pindah-pindah file antar device, Syncthing wajib dicoba. Aplikasi ini memungkinkan sinkronisasi folder secara <strong>peer-to-peer</strong>, langsung antar perangkat, tanpa lewat cloud pihak ketiga.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Web GUI</strong> yang mempermudah manajemen file/folder</li>
+<li><strong>Peer-to-peer langsung</strong> tanpa server pusat</li>
+<li><strong>Sinkronisasi otomatis</strong> antar device</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="4-portainer--dashboard-docker">4. <a href="https://www.portainer.io" target="_blank" rel="noopener noreferrer">Portainer</a> – Dashboard Docker<a href="#4-portainer--dashboard-docker" class="hash-link" aria-label="Direct link to 4-portainer--dashboard-docker" title="Direct link to 4-portainer--dashboard-docker">​</a></h3>
+<p>Bagi saya, <strong>Portainer</strong> adalah “dashboard wajib” di homelab. Lewat antarmuka berbasis web, saya bisa dengan mudah membuat template <strong>docker-compose</strong>, mengelola container, hingga backup.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>GUI berbasis web</strong> yang ramah pengguna</li>
+<li><strong>Mempermudah deployment</strong> container Docker</li>
+<li><strong>Remote management</strong> lewat agen Portainer</li>
+<li><strong>Backup template &amp; container</strong> dengan mudah</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="5-file-browser--file-explorer">5. <a href="https://filebrowser.org" target="_blank" rel="noopener noreferrer">File Browser</a> – File Explorer<a href="#5-file-browser--file-explorer" class="hash-link" aria-label="Direct link to 5-file-browser--file-explorer" title="Direct link to 5-file-browser--file-explorer">​</a></h3>
+<p>Sesuai namanya, <strong>File Browser</strong> adalah file explorer berbasis web. Konsepnya mirip Google Drive atau OneDrive, tapi berjalan di server pribadi.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Antarmuka web</strong> seperti Google Drive</li>
+<li><strong>Ringkas &amp; ringan</strong> dalam penggunaan</li>
+<li>Mudah untuk <strong>akses dan manajemen file</strong></li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="6-n8n--workflow-automation">6. <a href="https://n8n.io" target="_blank" rel="noopener noreferrer">n8n</a> – Workflow Automation<a href="#6-n8n--workflow-automation" class="hash-link" aria-label="Direct link to 6-n8n--workflow-automation" title="Direct link to 6-n8n--workflow-automation">​</a></h3>
+<p>Tahun 2025 ini, <strong>n8n</strong> lagi booming. Aplikasi ini memungkinkan kita membuat workflow automation tanpa coding yang terlalu rumit. Bagi saya yang punya background programming, n8n sangat menyenangkan untuk dieksplorasi.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Cocok untuk eksplorasi</strong> otomasi data</li>
+<li><strong>Interface</strong> mudah dipahami</li>
+<li><strong>Komunitas besar</strong> yang aktif</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="7-couchdb--database-untuk-obsidian">7. <a href="https://couchdb.apache.org" target="_blank" rel="noopener noreferrer">CouchDB</a> – Database untuk Obsidian<a href="#7-couchdb--database-untuk-obsidian" class="hash-link" aria-label="Direct link to 7-couchdb--database-untuk-obsidian" title="Direct link to 7-couchdb--database-untuk-obsidian">​</a></h3>
+<p>Saya gunakan <strong>CouchDB</strong> khusus sebagai database untuk <strong>Obsidian</strong>, agar bisa sinkronisasi catatan secara mandiri tanpa harus menggunakan layanan berbayar.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Database ringan</strong> untuk kebutuhan kecil</li>
+<li><strong>Integrasi lancar</strong> dengan Obsidian</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="8-stirling-pdf--alternatif-aman-untuk-pdf-tools">8. <a href="https://stirlingpdf.io" target="_blank" rel="noopener noreferrer">Stirling PDF</a> – Alternatif Aman untuk PDF Tools<a href="#8-stirling-pdf--alternatif-aman-untuk-pdf-tools" class="hash-link" aria-label="Direct link to 8-stirling-pdf--alternatif-aman-untuk-pdf-tools" title="Direct link to 8-stirling-pdf--alternatif-aman-untuk-pdf-tools">​</a></h3>
+<p>Kalau sering berkutat dengan PDF, <strong>Stirling PDF</strong> adalah penyelamat. Fiturnya mirip iLovePDF (merge, split, compress, dll.), tapi karena diselfhost, privasi file lebih terjaga.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Tools PDF lengkap</strong>: merge, split, compress, dll.</li>
+<li><strong>Lebih aman</strong> karena selfhost</li>
+<li>Cocok untuk <strong>pekerjaan rutin dengan PDF</strong></li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="9-umami--analytics">9. <a href="https://umami.is" target="_blank" rel="noopener noreferrer">Umami</a> – Analytics<a href="#9-umami--analytics" class="hash-link" aria-label="Direct link to 9-umami--analytics" title="Direct link to 9-umami--analytics">​</a></h3>
+<p>Buat Anda yang ingin alternatif Google Analytics, <strong>Umami</strong> layak dicoba. Setup-nya mudah, fiturnya cukup lengkap, dan bisa diakses publik untuk men-track trafik website.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Alternatif Google Analytics</strong> open-source</li>
+<li><strong>Setup cepat &amp; ringan</strong></li>
+<li><strong>Privasi lebih terjaga</strong> dibanding Google Analytics</li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="10-adguard-home--dns-filtering">10. <a href="https://adguard.com/en/adguard-home/overview.html" target="_blank" rel="noopener noreferrer">Adguard Home</a> – DNS Filtering<a href="#10-adguard-home--dns-filtering" class="hash-link" aria-label="Direct link to 10-adguard-home--dns-filtering" title="Direct link to 10-adguard-home--dns-filtering">​</a></h3>
+<p>Di STB saya, ada <strong>Adguard Home</strong> yang bertugas memfilter DNS. Jadi, setiap request DNS bisa disaring—apakah termasuk ke daftar berbahaya, penuh iklan, atau aman diakses.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Filtering DNS</strong> dari iklan &amp; malware</li>
+<li><strong>Meningkatkan keamanan browsing</strong></li>
+<li>Bisa diatur untuk <strong>semua perangkat jaringan</strong></li>
+</ul>
+<hr>
+<h3 class="anchor anchorWithHideOnScrollNavbar_WYt5" id="11-upsnap--memantau-device-via-mac-address">11. <a href="https://github.com/seriousm4x/UpSnap" target="_blank" rel="noopener noreferrer">Upsnap</a> – Memantau Device via MAC Address<a href="#11-upsnap--memantau-device-via-mac-address" class="hash-link" aria-label="Direct link to 11-upsnap--memantau-device-via-mac-address" title="Direct link to 11-upsnap--memantau-device-via-mac-address">​</a></h3>
+<p>Upsnap membantu saya mengetahui apakah sebuah device sedang aktif atau mati hanya dari MAC address-nya. Sangat berguna, apalagi saat listrik padam—karena STB otomatis hidup, sementara server butuh saya nyalakan manual.</p>
+<p><strong>Poin penting:</strong></p>
+<ul>
+<li><strong>Pantau status device</strong> hanya dengan MAC Address</li>
+<li>Berguna saat <strong>listrik padam</strong></li>
+<li>Bisa dipasang di <strong>STB untuk monitoring tambahan</strong></li>
+</ul>
+<hr></div><footer class="docusaurus-mt-lg"><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><b>Tags:</b><ul class="tags_jXut padding--none margin-left--sm"><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/blog/tags/self-hosting">self hosting</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/blog/tags/homelab">homelab</a></li><li class="tag_QGVx"><a rel="tag" class="tag_zVej tagRegular_sFm0" href="/blog/tags/linux">linux</a></li></ul></div></div><div class="row margin-top--sm theme-blog-footer-edit-meta-row"><div class="col"><a href="https://github.com/puxxbu/kaya-folio/tree/main/website/blog/2025-08-28-selfhost-journey.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Blog post page navigation"><a class="pagination-nav__link pagination-nav__link--next" href="/blog/cloudflared-self-host-linux"><div class="pagination-nav__sublabel">Older post</div><div class="pagination-nav__label">Cara Self-Host Cloudflared Tunnel di Linux</div></a></nav></main><div class="col col--2"><div class="tableOfContents_bqdL thin-scrollbar"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#bikin-homelab-sendiri--gampang-" class="table-of-contents__link toc-highlight"><strong>Bikin Homelab Sendiri ? Gampang!</strong> 💻</a></li><li><a href="#arsitektur-dan-perangkat-keras" class="table-of-contents__link toc-highlight"><strong>Arsitektur dan Perangkat Keras</strong></a></li><li><a href="#aplikasi-yang-saya-self-host-di-homelab" class="table-of-contents__link toc-highlight">Aplikasi yang Saya Self-Host di Homelab</a><ul><li><a href="#1-beszel--monitoring-sederhana-ringkas-dan-efektif" class="table-of-contents__link toc-highlight">1. Beszel – Monitoring Sederhana, Ringkas, dan Efektif</a></li><li><a href="#2-rustdesk--remote-desktop-gratis" class="table-of-contents__link toc-highlight">2. Rustdesk – Remote Desktop Gratis</a></li><li><a href="#3-syncthing--sinkronisasi-file-peer-to-peer" class="table-of-contents__link toc-highlight">3. Syncthing – Sinkronisasi File Peer-to-Peer</a></li><li><a href="#4-portainer--dashboard-docker" class="table-of-contents__link toc-highlight">4. Portainer – Dashboard Docker</a></li><li><a href="#5-file-browser--file-explorer" class="table-of-contents__link toc-highlight">5. File Browser – File Explorer</a></li><li><a href="#6-n8n--workflow-automation" class="table-of-contents__link toc-highlight">6. n8n – Workflow Automation</a></li><li><a href="#7-couchdb--database-untuk-obsidian" class="table-of-contents__link toc-highlight">7. CouchDB – Database untuk Obsidian</a></li><li><a href="#8-stirling-pdf--alternatif-aman-untuk-pdf-tools" class="table-of-contents__link toc-highlight">8. Stirling PDF – Alternatif Aman untuk PDF Tools</a></li><li><a href="#9-umami--analytics" class="table-of-contents__link toc-highlight">9. Umami – Analytics</a></li><li><a href="#10-adguard-home--dns-filtering" class="table-of-contents__link toc-highlight">10. Adguard Home – DNS Filtering</a></li><li><a href="#11-upsnap--memantau-device-via-mac-address" class="table-of-contents__link toc-highlight">11. Upsnap – Memantau Device via MAC Address</a></li></ul></li></ul></div></div></div></div></div><footer class="theme-layout-footer footer"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Connect</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.linkedin.com/in/valerino-gozen-995473148/" target="_blank" rel="noopener noreferrer" class="footer__link-item">LinkedIn<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://github.com/puxxbu" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="mailto:bvgozen@gmail.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Email<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Discover</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/projects">Projects</a></li><li class="footer__item"><a href="https://puxxbu.my.id/pdf/resume.pdf" target="_blank" rel="noopener noreferrer" class="footer__link-item">Resume<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright"><a href="https://evantay.com">Design by Valerino Gozen, Template by Evan Tay</a> • <a href="https://github.com/puxxbu/kaya-folio/commits/main">Updated 1/16/2026</a></div></div></div></footer></div>
+</body>
+</html>
